@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chafik Bouzaghou — Full-Stack Developer &amp; Cybersecurity Enthusiast</title>
+<meta name="description" content="Portfolio of Chafik Bouzaghou — full-stack developer and cybersecurity enthusiast, browsable like a Kali Linux file explorer: projects, internships, CTF achievements and certifications." />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%225%22 fill=%22%230a0c11%22/><text x=%2212%22 y=%2217%22 font-size=%2214%22 text-anchor=%22middle%22 fill=%22%235fd97c%22 font-family=%22monospace%22>&gt;_</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="root"></div>
+
+<!-- Image assets, base64-embedded (see assets.js / build.py) -->
+<script src="assets.js"></script>
+<!-- Editable content: profile, projects, internships, achievements, certifications -->
+<script src="data.js"></script>
+<!-- App code is inlined below (instead of <script src="app.js">) so the page
+     still renders when opened directly as a local file (double-click), not
+     just when served over http(s). Edit app.js, then run `python3 build.py`
+     to regenerate this block. -->
+<script type="text/babel" data-presets="react">
+__APP_JS__
+</script>
+</body>
+</html>
